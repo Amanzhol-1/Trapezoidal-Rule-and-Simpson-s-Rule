@@ -25,6 +25,10 @@ double Simpson (double a, double b, int n){
 int main(){
     double a, b; cin >> a >> b;
     int n; cin >> n;
-
-    cout <<  Simpson(a, b, n);
+    if (n % 2 == 1){
+        cout << "the number n must be an even number";
+    }
+    else {
+        cout <<  Simpson(a, b, n);
+    }
 }
